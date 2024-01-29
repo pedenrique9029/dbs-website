@@ -1,0 +1,125 @@
+body {
+    background-color: black;
+    overflow: hidden;
+}
+main::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8038865204284839) 0%, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.33890052603072474) 100%);
+}
+
+main .personagem {
+    display: none;
+    height: 100vh;
+}
+
+main .personagem.selecionado {
+    display: block;
+}
+
+main .personagem .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 380px;
+    z-index: 1;
+}
+
+.conteudo .nome-personagem {
+    color: azure;
+    font-size: 48px;
+    font-family: "Secular One";
+    margin-bottom: 20px;
+
+}
+
+.conteudo .descricao {
+    color: azure;
+    font-family: "Rubik";
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.conteudo .logo {
+    background-image: url("../imagens/dbs\ logo.png");
+    background-size: cover;
+    height: 100px;
+    width: 230px;
+    object-fit: cover;
+}
+
+.botoes {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform: scale(0.15);
+    display: flex;
+    flex-direction: row;
+    height: 180px;
+    width: 20vw;
+    justify-content:end;
+    gap: 120px;
+}
+
+.botoes .botao {
+    padding: 0px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.botao:hover {
+    box-shadow: 0 0 100px rgb(255, 255, 255);
+}
+
+.botoes .botao img {
+
+    border-radius: 50%;
+}
+
+.botoes .botao.selecionado {
+    transform: scale(1.2);
+}
+.botoes .botao.selecionado.goku {
+    transform: scale(1.2);
+    box-shadow: 0 0 100px rgb(235, 137, 57);
+}
+.botoes .botao.selecionado.vegeta {
+    transform: scale(1.2);
+    box-shadow: 0 0 100px rgb(15, 15, 120);
+}
+.botoes .botao.selecionado.broly {
+    transform: scale(1.2);
+    box-shadow: 0 0 100px rgb(7, 78, 14);
+}
+.botoes .botao.selecionado.gohan {
+    transform: scale(1.2);
+    box-shadow: 0 0 100px rgb(90, 27, 146);
+}
+.botoes .botao.selecionado.gogeta {
+    transform: scale(1.2);
+    box-shadow: 0 0 100px rgb(197, 236, 91);
+}
+.botoes .botao.selecionado.vegetto {
+    transform: scale(1.2);
+    box-shadow: 0 0 100px rgb(10, 113, 208);
+}
+.botoes .botao.selecionado.oozaru {
+    transform: scale(1.2);
+    box-shadow: 0 0 100px rgb(115, 115, 169);
+}

@@ -1,0 +1,26 @@
+@media (max-width:1024px) {
+    .personagem img {
+        scale: 1;
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+        object-position:60%;
+    }
+    .botoes{
+        scale: 80%;
+        display: flex;
+        justify-content: space-around;
+        margin: 250px 35px;
+        flex-direction: column;
+    }
+    .botao:focus {
+        box-shadow: 0 0 100px rgb(255, 255, 255);
+    }
+    .conteudo{
+        top: 100px;
+        left: 50px;
+        width: 240px;
+
+    }
+
+}
